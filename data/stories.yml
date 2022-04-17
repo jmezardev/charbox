@@ -1,0 +1,46 @@
+version: "2.0"
+
+stories:
+
+- story: decir hola
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - action: utter_sugerencia
+
+- story: bot informacion
+  steps:
+  - intent: conoce_bot
+  - action: utter_infobot
+  - intent: conoce_topico
+  - action: utter_infotopico
+ 
+- story: decir pregunta_motor
+  steps:
+  - intent: motor
+  - action: utter_motor
+  - action: utter_suge_cont
+  - intent: afirmacion
+  - action: utter_conexion_suge
+  - action: utter_motor_manto
+
+- story: decir pregunta_motor_seleccion
+  steps:
+  - intent: pregunta_seleccionmotor
+  - action: utter_motor_seleccion
+
+
+- story: decir pregunta_drive
+  steps:
+  - intent: variador
+  - action: utter_variador  
+  - action: utter_suge_cont
+  - intent: afirmacion
+  - action: utter_conexion_suge
+  - action: utter_variador_seleccion
+  
+- story: sad path 2
+  steps:
+  - action: utter_cheer_up
+
+

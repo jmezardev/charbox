@@ -1,0 +1,142 @@
+version: "2.0"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hola
+    - buen dia 
+    - Hey
+    - buenos dias
+    - buenosdias
+    - hola amigo
+    - hola bot
+    - buenas tardes
+    - buenastardes
+    - buenasnoches
+
+- intent: conoce_bot
+  examples: |
+    - que informacion me puedes brindar
+    - que tipo de informacion manejas
+    - que sabes?
+    - que informacion brindas?
+    - que temas dominas?
+
+- intent: conoce_topico 
+  examples: |
+    - que elementos tiene una maquina industrial?
+    - que partes tiene una maquina indsutrial?
+    - que componentes tiene ?
+    - Cuales son las principales partes de una maquina indsutrial
+
+- intent: despedida
+  examples: |
+    - buenas tardes
+    - cuidate muchos
+    - adios
+    - nos vemos
+    - bye
+    - hasta luego
+    - que tengas un buen dia 
+    - nos vemos pronto
+    - buen dia
+
+- intent: afirmacion
+  examples: |
+    - si
+    - claro que si
+    - por supuesto
+    - en efecto
+    - correcto
+
+- intent: motor
+  examples: |
+    - que son los motores electricos?
+    - que es un motor electrico?
+    - como se define un motor?
+    - informacion de motores?
+    - sabes de motores?
+    - que caracterisitcas tiene un motor electrico?
+    - quiero saber sobre los motores electricos 
+
+- intent: pregunta_mantomotor
+  examples: |
+    - quiero saber sobre el mantenimiento de los motores electricos
+    - cada cuanto se realiza un mantenimiento a los motores
+    - como se realiza el  mantenimiento en los motores 
+
+- intent: pregunta_seleccionmotor
+  examples: |
+    - como se seleciona un motor
+    - que debo tener en cuenta para escoger un motor
+    - que paramatros debo tener en cuenta para seleecionar un motor 
+
+- intent: pregunta_aplicacionmotor
+  examples: |
+    - que aplicaciones tiene 
+    - donde se utilizan 
+    - como se utiliza 
+    - en que aplicaicones se usan
+    - por que son importantes  
+
+- intent: variador
+  examples: |
+    - que son los variadores de frecuencia?
+    - que es un VFD ?
+    - sabes que es un variador?
+    - que sabes de variadores?
+    - que es un variador?
+    - para que se usa un VFD
+    - que funcion tiene un variador 
+    - para que se utilizan los VFDs
+    - para que sirve los variadores 
+
+- intent: pregunta_seleccionVFD
+  examples: |
+    - como se seleciona un VFD
+    - como se seleciona un variador
+    - que debo tener en cuenta para escoger un VFD
+    - que debo tener en cuenta para escoger un Variador
+    - que paramatros debo tener en cuenta para seleecionar un VFD
+
+- intent: modo_genial
+  examples: |
+    - perfecto
+    - excelente
+    - estoy muy bien 
+    - estoy genial
+    - muy bien
+    - extremandamente bien 
+    - genial
+ 
+- intent: modo_infeliz
+  examples: |
+    - Estoy molesto 
+    - No me siento muy bien 
+    - Estoy desepcionado 
+    - super triste
+    - muy triste
+    - triste
+    - molesto
+    - no tan bien 
+
+- intent: bot_challenge
+  examples: |
+    - eres un robot
+    - eres humano
+    - estoy hablando con un robot
+    - estoy hablando con un humano
+    - con quien estoy hablando
+
+- intent: fuera_alcance
+  examples: |
+    - ordenar comida 
+    - cuanto es ese calculo
+    - quien es el presidente
+    - matematica elemental
+    - sabes de autos
+    - sabes de aeropuertos
+
+
+
+
