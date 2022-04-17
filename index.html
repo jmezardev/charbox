@@ -1,0 +1,32 @@
+<html>
+    <body>
+    <style>
+       .rw-conversation-container .rw-header{background-color: rgb(102, 0, 255);}
+    </style>
+        <script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  { 
+                    initPayload: '/saludo', 
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title:'Mant bot',
+                    subtitle:'Tu amigo en la automatización'
+                    // add other props here
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          </script>
+
+
+    </body>
+
+</html>

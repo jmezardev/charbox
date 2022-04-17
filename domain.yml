@@ -1,0 +1,95 @@
+version: "2.0"
+
+intents:
+  - saludo
+  - conoce_bot
+  - conoce_topico
+  - despedida
+  - afirmacion
+  - motor
+  - pregunta_mantomotor
+  - pregunta_seleccionmotor
+  - pregunta_aplicacionmotor
+  - variador
+  - pregunta_seleccionVFD
+  - modo_genial
+  - modo_infeliz
+  - bot_challenge
+  - fuera_alcance
+
+responses:
+  utter_principal:
+  - text: "Te saluda Main_Bot , especialista de maquinas industriales "
+  - text: "Soy Main_Bot tu amigo espacialista en maquina industriales "
+
+  utter_saludo:
+  - text: "¡Hola!"
+  - text: "Hola, ¿qué tal?"
+  - text: "Hola, me alegra verte por aquí."
+  - text: "¡Bienvenido!"
+  - text: "¡Hola! "
+
+  utter_sugerencia:
+  - text: "¿Puedo ayudarte en algo?"
+  - text: "Comentame , ¿Como te ayudo?"
+  - text: "Buscas alguna informacion en especifico"
+
+  utter_suge_cont:
+  - text: "¿Te gustaria saber mas?"
+
+  utter_conexion_suge:
+  - text: "Por ejemplo , sabias que "
+  - text: "Un dato importante a tener en cuenta es   "
+
+  utter_motor:
+  - text: "Un Motor es una máquina capaz de convertir la energía eléctrica en mecánica , cuyo principio de funcionamiento es la manipulacion de campos magneticos .En la industria estos equipos tienen distintintos tipos de accionamientos los cuales pueden ser VFD , Softstarters o arreglo de contactores"
+  - text: "El motor eléctrico es un dispositivo que convierte la energía eléctrica en energía mecánica de rotación por medio de la acción de los campos magnéticos generados en sus bobinas. Son máquinas eléctricas rotatorias compuestas por un estator y un rotor. En la industria estos equipos tienen distintintos tipos de accionamientos los cuales pueden ser VFD , Softstarters o arreglo de contactore"
+  
+  utter_motor_manto:
+  - text: "El mantenimiento debe realizarse constantemente y de manera planificada para evitar problemas futuros . La periodisidad dependera de muchos factores , como la aplicacion , ambiente de trabajo , potencia y tiempo de operacion del equipo"
+
+  utter_motor_seleccion:
+  - text: "Los motores se seleccionan por el tipo de aplicacion , la altura en la cual operara , potencia requerida y tipo de encerramiento"
+
+  utter_motor_aplicacion:
+  - text: "Los motores electricos se utilizan en muchas aplicaciones que requieren inducir movimiento ya sea rotaciones , basado en desplazamiento, movieminto de fluidos etc. Se pueden encontrar en aplicaciones de ventilacion , bombas , fajas transportadoras , compresores"
+
+  utter_variador:
+  - text: "Un variador de frecuencia por definición es un regulador industrial que se encuentra entre la alimentación energética y el motor. La energía de la red pasa por el variador y regula la energía antes de que ésta llegue al motor para luego ajustar la frecuencia y la tensión en función de los requisitos del procedimiento."
+  - text: "El variador de frecuencia también es conocido como convertidor de frecuencia de corriente alterna, convertidor de velocidad variable, variador de velocidad, VSD, VFC o VFD por sus siglas en inglés o simplemente variador o convertidor"
+  utter_variador_seleccion:
+  - text: "Para la seleccion correcta de un variador , debemos analizar la aplicacion en la se utilizara y el entorno donde se instalara. Los datos electricos a consultar son: Voltaje, corriente y grado de protección"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_no_informacion:
+  - text: "Lamentablemente aun no tengo esa informacion"
+  - text: "Lo siento de momento desconosco este topico"
+  - text: "Lo siento estoy trabajando para aprender mas"
+  - text: "Voy anotar esta pregunta , para buscar una respuesta"
+
+  utter_feliz:
+  - text: "Excelente, buenas noticias!"
+
+  utter_adios:
+  - text: "Nos vemos pronto"
+  - text: "Hasta luego"
+  - text: "Bye"
+  - text: "Cuidate , ten un buen dia"
+
+  utter_iamabot:
+  - text: "Soy una entidad digital que busca ayudarte."
+
+  utter_infobot:
+  - text: "Puedo ayudarte a identificar los componentes principales en una maquina industrial  "
+  - text: "Con mi ayuda podras identificar los principales componentes de una maquina industrial "
+
+  utter_infotopico:
+  - text: "Los principales partes son: Motores , Variadores o arrancadores , elementos de control inteligente (PLCs)"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
